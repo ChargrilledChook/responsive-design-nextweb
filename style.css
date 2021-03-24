@@ -75,16 +75,55 @@ section {
 .hero-card {
   font-size: 1.2rem;
   line-height: 2.4rem;
-  height: 28vh;
+  min-height: 28vh;
   margin: 0 .5em .5em .5em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: linear-gradient(to bottom, transparent, black),
-  url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F03%2Fzuckbrain.jpg&signature=f3f0f7b05cb451d3c0fb83fca2ed2bad);
-  background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
+}
+
+@media (min-width:768px) {
+  .hero {
+    display: grid;
+    grid-template-areas:
+    "big little1"
+    "big little2";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .hero-card {
+    background-size: cover;
+  }
+
+  .zuck {
+    grid-area: big;
+  }
+
+  .boost {
+    grid-area: little1;
+  }
+
+  .drones {
+    grid-area: little2;
+  }
+}
+
+.zuck {
+  background-image: linear-gradient(to bottom, transparent, black),
+  url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F03%2Fzuckbrain.jpg&signature=f3f0f7b05cb451d3c0fb83fca2ed2bad);
+}
+
+.boost {
+  background-image: linear-gradient(to bottom, transparent, black),
+  url(https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/boost2021-bg_page_header-2.jpg);
+}
+
+.drones {
+  background-image: linear-gradient(to bottom, transparent, black),
+  url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F03%2FUntitled-design-2021-03-23T161949.714.png&signature=c25d013650c18c0579849448ae82bf43);
 }
 
 .hero-card h2 {
