@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*::before, *, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin : 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+}
+
+/* General Styles */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+
+.top-nav {
+  display: flex;
+}
+
+.logo {
+  width: 100px;
+  display: flex;
+}
+
+img {
+  padding: .5em;
+}
+
+.logo {
+  background-color: black;
+  padding: 1em;
+}
+
+.search {
+  margin-left: auto;
+}
+
+.search, .hamburger {
+  padding: .8em;
+  display: grid;
+  place-items: center;
+  border-left: 1px solid rgba(201, 191, 191, 0.5);
+}
+
+.by-line {
+  background-color: #fd3;
+  font-size: 1.4rem;
+  padding: 1.8em  .5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Main */
+
+main {
+  min-height:80vh;
+}
+
+section {
+  margin-bottom: 6em;
+}
+
+/* Hero */
+
+.hero-card {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  height: 28vh;
+  margin: 0 .5em .5em .5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: linear-gradient(to bottom, transparent, black),
+  url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F03%2Fzuckbrain.jpg&signature=f3f0f7b05cb451d3c0fb83fca2ed2bad);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
+
+.hero-card h2 {
+  padding: .5em 0;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+/* Latest News */
+
+.latest-news {
+  padding: 1.5em;
+}
+
+.latest-news h2 {
+  color: #ff4422;
+  font-size: 2.4rem;
+}
+
+/* Footer */
+
+.social-nav {
+  background-color: #131313;
+}
+
+.social-icons {
+  padding-top: 3em;
+  margin-bottom: 2.5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.site-links {
+  padding-bottom: 3em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.site-links > * {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.site-info {
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+  padding: 3em 4em;
+  gap: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
