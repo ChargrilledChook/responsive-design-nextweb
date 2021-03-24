@@ -62,10 +62,6 @@ img {
 
 /* Main */
 
-main {
-  min-height:80vh;
-}
-
 section {
   margin-bottom: 6em;
   margin-left: auto;
@@ -142,6 +138,7 @@ section {
 
 /* REFACTOR */
 .latest-news h2, .funding h2, .catergory h2, .latest-deals h2 {
+  margin-left: .5em;
   color: #ff4422;
   font-size: 2.4rem;
 }
