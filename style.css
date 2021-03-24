@@ -26,6 +26,10 @@ a {
   display: flex;
 }
 
+.top-nav-links {
+  display: none;
+}
+
 .logo {
   width: 100px;
   display: flex;
@@ -79,7 +83,6 @@ section {
   font-size: 1.2rem;
   line-height: 2.4rem;
   min-height: 28vh;
-  margin: 0 .5em .5em .5em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -90,6 +93,7 @@ section {
 @media (min-width:768px) {
   .hero {
     display: grid;
+    gap: .75em;
     grid-template-areas:
     "big little1"
     "big little2";
