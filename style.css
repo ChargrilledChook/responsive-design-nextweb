@@ -147,11 +147,25 @@ article h3 {
 
 .news__card {
   margin: 0 2rem;
-  /* display: grid;
-  column-gap: 1.5rem;
-  grid-template-columns: 75px 1fr;
-  grid-template-rows: repeat(8, calc(75/8)); */
   display: flex;
+}
+
+@media (min-width:768px) {
+   /* THIS PROBABLY NEEDS TO MOVE SOMEWHERE ELSE */
+   .small-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .news__card {
+    display: block;
+  }
+
+  .news-img-ph > img {
+    /* min-width: 100px; */
+    width: 100%;
+    max-height: 150px;
+  }
 }
 
 /* Move to general styles? REFACTOR */
