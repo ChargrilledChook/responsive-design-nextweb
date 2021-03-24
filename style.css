@@ -13,14 +13,14 @@ body {
   line-height: 2rem;
 }
 
-/* General Styles */
+/* General Styles ---------- */
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Header */
+/* Header ---------- */
 
 .top-nav {
   display: flex;
@@ -64,7 +64,7 @@ img {
   text-overflow: ellipsis;
 }
 
-/* Main */
+/* Main ---------- */
 
 section {
   margin-bottom: 6em;
@@ -73,7 +73,7 @@ section {
   max-width: 111.5rem;
 }
 
-/* Hero */
+/* Hero ---------- */
 
 .hero {
   max-width: 100%;
@@ -138,20 +138,34 @@ section {
   font-size: 2.2rem;
 }
 
-/* Latest News */
+/* Latest News ---------- */
 
-/* REFACTOR */
-.latest-news h2, .funding h2, .catergory h2, .latest-deals h2 {
-  margin-left: .5em;
-  color: #ff4422;
-  font-size: 2.4rem;
+article h3 {
+  margin: 0;
+  font-size: 1.4rem;
 }
 
-h2::after {
+.news__card {
+  margin: 0 2rem;
+  /* display: grid;
+  column-gap: 1.5rem;
+  grid-template-columns: 75px 1fr;
+  grid-template-rows: repeat(8, calc(75/8)); */
+  display: flex;
+}
+
+/* Move to general styles? */
+section > h2 {
+  margin-left: 2rem;
+  color: #ff4422;
+  font-size: 2.8rem;
+}
+
+section > h2::after {
   content: " >"
 }
 
-/* Catergories */
+/* Catergories ---------- */
 
 .catergory {
   height: 200px;
@@ -167,7 +181,7 @@ h2::after {
   }
 }
 
-/* Footer */
+/* Footer ---------- */
 
 .social-nav {
   background-color: #131313;
