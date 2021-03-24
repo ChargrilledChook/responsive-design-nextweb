@@ -154,8 +154,8 @@ article h3 {
   display: flex;
 }
 
-/* Move to general styles? */
-section > h2 {
+/* Move to general styles? REFACTOR */
+section > h2, .funding-header > h2 {
   margin-left: 2rem;
   color: #ff4422;
   font-size: 2.8rem;
@@ -163,6 +163,54 @@ section > h2 {
 
 section > h2::after {
   content: " >"
+}
+
+/* Funding ----------  */
+
+.funding-header > a {
+  display: block;
+  color: #ff4422;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}
+
+.funding-card {
+  position: relative;
+  background-color: #fefaf8;
+  margin: 1rem 2rem;
+}
+
+.funding-card h3 {
+  background-color: #f44524;
+  color: white;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.funding-card > header {
+  background-color: #fdebe6;
+}
+
+.left-pad {
+  padding-left: 8.4rem;
+}
+
+.funding-card-ph {
+  border: 1px dashed black;
+  background-color: rgb(126, 188, 199);
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 1rem;
+  left: 1rem;
+  padding: 0;
+
+}
+
+.funding-card > :last-child {
+  border-top: 2px solid #fdebe6;
 }
 
 /* Catergories ---------- */
