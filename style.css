@@ -151,6 +151,22 @@ h2::after {
   content: " >"
 }
 
+/* Catergories */
+
+.catergory {
+  height: 200px;
+  margin: 0;
+  border: 1px dashed grey;
+}
+
+@media (min-width: 768px) {
+  .catergories {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
 /* Footer */
 
 .social-nav {
