@@ -237,11 +237,19 @@ article h3 {
 
 /* Funding ----------  */
 
-.funding-header > a {
+.funding-header a {
   display: block;
   color: #ff4422;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 2.8rem;
+}
+
+.funding-header > h2 {
+  margin-bottom: 1.4rem;
+}
+
+.funding-header {
+  margin-bottom: 1.8rem;
 }
 
 .funding-card {
@@ -286,6 +294,17 @@ article h3 {
 }
 
 @media (min-width: 768px) {
+
+  /* Tad Hacky / spacing is slightly off. Refactor if time. Could use borders */
+  .centre-link::before, .centre-link::after {
+    content: '  |  '
+  }
+
+  .funding-links {
+    display: flex;
+    gap: 1rem;
+  }
+
   .funding-grid {
     display: grid;
     gap: 2rem;
@@ -294,6 +313,15 @@ article h3 {
 }
 
 @media (min-width: 1025px) {
+  .funding-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .funding-links {
+    flex-direction: row-reverse;
+  }
+
   .extra-fund {
     display: block;
   }
