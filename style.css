@@ -171,6 +171,7 @@ article h3 {
    }
    .small-card-grid {
     display: grid;
+    gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
@@ -245,10 +246,55 @@ article h3 {
 
 /* Catergories ---------- */
 
+
+.catergory > h2 {
+  margin-bottom: 1.4rem;
+}
+
+.picsum {
+  aspect-ratio: 4/3; /* Cool but doesn't work on firefox */
+  background-image: url(https://picsum.photos/450);
+  background-size: cover;
+  background-position: center;
+}
+
 .catergory {
-  height: 200px;
   margin: 0;
-  border: 1px dashed grey;
+  margin-bottom: 2.6rem;
+  /* border: 1px dashed grey; */
+}
+
+.cat-latest {
+  color: #f44524;
+  background-color: #fef4f2;
+}
+
+h4 {
+  margin: 0;
+  margin-left: 1.1rem;
+  padding: .6rem 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #555;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.2);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.catergory li {
+  list-style: none;
+}
+
+.catergory h4::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 @media (min-width: 768px) {
