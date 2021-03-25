@@ -25,6 +25,12 @@ main > section {
   margin: 2rem;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
 /* Header ---------- */
 
 body > header {
@@ -277,11 +283,6 @@ h4 {
   font-weight: 400;
   color: #555;
   border-bottom: 1px solid rgba(85, 85, 85, 0.2);
-}
-
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 .catergory li {
