@@ -10,6 +10,7 @@ html {
 body {
   margin : 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
   line-height: 2rem;
 }
 
@@ -21,6 +22,14 @@ a {
 }
 
 /* Header ---------- */
+
+body > header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
 
 .top-nav {
   display: flex;
@@ -66,6 +75,10 @@ img {
 
 /* Main ---------- */
 
+main {
+  margin-top: 14rem;
+}
+
 section {
   margin-bottom: 6em;
   margin-left: auto;
@@ -88,6 +101,10 @@ section {
   justify-content: flex-end;
   background-size: 100% 100%;
   color: white;
+}
+
+.hero article > h3 {
+  font-size: 2.2rem;
 }
 
 @media (min-width:768px) {
@@ -132,12 +149,6 @@ section {
   url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F03%2FUntitled-design-2021-03-23T161949.714.png&signature=c25d013650c18c0579849448ae82bf43);
 }
 
-.hero-card h2 {
-  padding: .5em 0;
-  margin: 0;
-  font-size: 2.2rem;
-}
-
 /* Latest News ---------- */
 
 article h3 {
@@ -169,13 +180,13 @@ article h3 {
 }
 
 /* Move to general styles? REFACTOR */
-section > h2, .funding-header > h2 {
-  margin-left: 2rem;
+ h2 {
+  margin: 0 0 4rem 2rem;
   color: #ff4422;
   font-size: 2.8rem;
 }
 
-section > h2::after {
+ h2::after {
   content: " >"
 }
 
@@ -241,6 +252,14 @@ section > h2::after {
     gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+}
+
+/* Latest Deals ---------- */
+
+.latest-deals header {
+  margin-right: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Footer ---------- */
