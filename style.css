@@ -96,6 +96,10 @@ body > header {
   .extra-nav {
     display: block;
   }
+
+  .by-line {
+    text-align: justify;
+  }
 }
 
 /* Main ---------- */
@@ -140,7 +144,7 @@ section {
 
 @media (min-width:768px) {
   .by-line {
-    padding: 1rem;
+    padding: 1rem 2rem;
   }
 
   .hero {
@@ -243,7 +247,7 @@ article h3 {
 .funding-card {
   position: relative;
   background-color: #fefaf8;
-  margin: 1rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .funding-card h3 {
@@ -271,11 +275,28 @@ article h3 {
   top: 1rem;
   left: 1rem;
   padding: 0;
+}
 
+.extra-fund {
+  display: none;
 }
 
 .funding-card > :last-child {
   border-top: 2px solid #fdebe6;
+}
+
+@media (min-width: 768px) {
+  .funding-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}
+
+@media (min-width: 1025px) {
+  .extra-fund {
+    display: block;
+  }
 }
 
 /* Catergories ---------- */
