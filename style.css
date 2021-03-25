@@ -21,6 +21,10 @@ a {
   color: inherit;
 }
 
+main > section {
+  margin: 2rem;
+}
+
 /* Header ---------- */
 
 body > header {
@@ -43,10 +47,6 @@ body > header {
 .logo {
   width: 100px;
   display: flex;
-}
-
-img {
-  padding: .5em;
 }
 
 .logo {
@@ -77,13 +77,10 @@ img {
 /* Main ---------- */
 
 main {
-  margin-top: 14rem;
+  margin-top: 12.8rem;
 }
 
 section {
-  margin-bottom: 6em;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 111.5rem;
 }
 
@@ -91,9 +88,11 @@ section {
 
 .hero {
   max-width: 100%;
+  margin: 0 .75rem;
 }
 
 .hero-card {
+  margin: 0 0 .75rem 0;
   font-size: 1.2rem;
   line-height: 2.4rem;
   min-height: 28vh;
@@ -158,12 +157,17 @@ article h3 {
 }
 
 .news__card {
-  margin: 0 2rem;
   display: flex;
+  gap: 1.5rem;
 }
 
 @media (min-width:768px) {
    /* THIS PROBABLY NEEDS TO MOVE SOMEWHERE ELSE */
+
+   main > section {
+    margin-left: auto;
+    margin-right: auto;
+   }
    .small-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -182,7 +186,7 @@ article h3 {
 
 /* Move to general styles? REFACTOR */
  h2 {
-  margin: 0 0 4rem 2rem;
+  margin: 0 0 4rem 0;
   color: #ff4422;
   font-size: 2.8rem;
 }
@@ -196,7 +200,6 @@ article h3 {
 .funding-header > a {
   display: block;
   color: #ff4422;
-  margin-left: 2rem;
   font-size: 1.4rem;
   line-height: 2.8rem;
 }
@@ -204,7 +207,7 @@ article h3 {
 .funding-card {
   position: relative;
   background-color: #fefaf8;
-  margin: 1rem 2rem;
+  margin: 1rem 0;
 }
 
 .funding-card h3 {
@@ -258,7 +261,6 @@ article h3 {
 /* Latest Deals ---------- */
 
 .latest-deals header {
-  margin-right: 2rem;
   display: flex;
   justify-content: space-between;
 }
