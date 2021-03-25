@@ -69,6 +69,7 @@ body > header {
   background-color: #fd3;
   font-size: 1.4rem;
   padding: 1.8em  .5em;
+  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
